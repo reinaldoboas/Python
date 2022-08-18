@@ -15,7 +15,7 @@ usuario = sys.argv[2]
 
 f = open('C:\\Users\\User\\Documents\\MEGA\\OSCP\\DCPT\\Força_Bruta\\wordlist.txt.txt')
 for palavra in f.readlines():
-    print(f"Realizando o brute force FTP: {usuario}:{palavra}")
+    print(f"Realizando o brute force FTP: {usuario}:{palavra}").strip()
     
     # Criando o socket TCP
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
